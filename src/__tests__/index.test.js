@@ -61,6 +61,7 @@ describe("Testing the app endpoints", () => {
 
 
     afterAll(done => {
+      
         mongoose.connection.dropDatabase()
             .then(() => {
                 return mongoose.connection.close()
@@ -70,6 +71,8 @@ describe("Testing the app endpoints", () => {
             })
     })
 
+    
+     
 
     // it("should test that the GET /products endpoint returns a list of products", async () => {})
 
